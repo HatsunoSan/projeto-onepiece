@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/* font-family: 'Sriracha', cursive; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    
+    --page: 'Sriracha', cursive;
+    --padrao: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+html, body {
+    min-height: 100vh;
+    
+}
+
+header {
+    padding: 40px;
+    height: 10vh;
+    
+    background: url("../imagens/one-piece-banner-test.png") no-repeat center center, 
+                url("../imagens/anime-sea.jpg") bottom center/ cover no-repeat;  
+}
+
+section {
+    padding: 50px;
+    font-size: 3vw;
+}
+section > p{
+    font-family: var(--page);
+    line-height: 2em;
+
+    text-shadow: 2px 2px 0px black;
+    padding: 20px;
+    
+    margin: 30px;
+    margin-left: -30px;
+    display: inline-block;
+}
+
+.imagem > p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.418); 
+}
+
+#gold {
+    background: url('../imagens/gold-roger-execution.jpg') center center/ cover no-repeat fixed;
+    
+}
+#navios {
+   background: url('../imagens/navios-piratas.jpg') center right/ cover no-repeat fixed;
+    
+}
+#eastblue {
+    background: url('../imagens/one-piece-East-Blue.jpg') center center/ cover no-repeat fixed;
+    
+}
+#timeskip {
+    background: url('../imagens/one-piece-straw-hat-crew-timeskip.jpg') center center/ cover no-repeat fixed;
+    
+}
+
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-family: var(--padrao);
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
+}
+a::after {
+    content: '👒';
+}
